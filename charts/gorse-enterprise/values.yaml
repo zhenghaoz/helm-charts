@@ -79,6 +79,11 @@ gorse:
     ##
     serverCacheExpire: "10s"
 
+  database:
+    tablePrefix: ""
+    cacheTablePrefix: ""
+    dataTablePrefix: ""
+
   recommends:
     ## @param gorse.recommends[0].name The name of recommend channel
     ##

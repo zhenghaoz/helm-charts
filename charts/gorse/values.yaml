@@ -79,6 +79,11 @@ gorse:
     ##
     serverCacheExpire: "10s"
 
+  database:
+    tablePrefix: ""
+    cacheTablePrefix: ""
+    dataTablePrefix: ""
+
   recommend:
     dataSource:
       ## @param gorse.recommend.dataSource.feedbackTimeToLive The time-to-live (days) of positive feedback
