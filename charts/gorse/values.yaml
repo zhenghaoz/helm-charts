@@ -79,6 +79,16 @@ gorse:
     ##
     serverCacheExpire: "10s"
 
+  database:
+    ## @param gorse.database.tablePrefix The naming prefix for tables (collections, keys) in databases.
+    tablePrefix: ""
+
+    ## @param gorse.database.cacheTablePrefix The naming prefix for tables (collections, keys) in cache storage databases. The default value is `table_prefix`.
+    cacheTablePrefix: ""
+
+    ## @param gorse.database.dataTablePrefix The naming prefix for tables (collections, keys) in data storage databases. The default value is `table_prefix`.
+    dataTablePrefix: ""
+
   recommend:
     dataSource:
       ## @param gorse.recommend.dataSource.feedbackTimeToLive The time-to-live (days) of positive feedback
@@ -158,7 +168,7 @@ master:
   image:
     registry: docker.io
     repository: zhenghaoz/gorse-master
-    tag: 0.4.12
+    tag: 0.4.15
     digest: ""
     ## Specify an imagePullPolicy
     ## ref: http://kubernetes.io/docs/user-guide/images/#pre-pulling-images
@@ -473,7 +483,7 @@ server:
   image:
     registry: docker.io
     repository: zhenghaoz/gorse-server
-    tag: 0.4.12
+    tag: 0.4.15
     digest: ""
     ## Specify an imagePullPolicy
     ## ref: http://kubernetes.io/docs/user-guide/images/#pre-pulling-images
@@ -753,7 +763,7 @@ worker:
   image:
     registry: docker.io
     repository: zhenghaoz/gorse-worker
-    tag: 0.4.12
+    tag: 0.4.15
     digest: ""
     ## Specify an imagePullPolicy
     ## ref: http://kubernetes.io/docs/user-guide/images/#pre-pulling-images
